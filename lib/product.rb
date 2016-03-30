@@ -33,6 +33,10 @@ class Product
         @@products.find_all { |product| product.in_stock? == true}
     end
 
+    def reduce_stock
+        @stock = @stock - 1
+    end
+
     private
 
     def add_to_products

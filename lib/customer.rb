@@ -16,6 +16,10 @@ class Customer
         @@customers.find {|customer| customer.name == name}
     end
 
+    def purchase(product)
+        Transaction.new(self, product)
+    end
+
     private
 
     def add_to_customers
@@ -25,5 +29,4 @@ class Customer
             @@customers << self
         end
     end
-
 end
