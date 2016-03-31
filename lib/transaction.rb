@@ -5,6 +5,7 @@ class Transaction
 
 	@@count = 0
 	@@transactions = []
+	@@returned_transactions = [] #NEW FEATURE
 
 	def initialize(customer, product)
 		if product.in_stock?
@@ -27,6 +28,9 @@ class Transaction
 		@@transactions
 	end
 
-	private
-
+	def self.returned(id)
+		returned_transaction = Transaction.find(id)
+		@@returned_transactions << @@transactions.delete(returned_transaction)
+		returned_transaction.product.increase_stock
+	end
 end
