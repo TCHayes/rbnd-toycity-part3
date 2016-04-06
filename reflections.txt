@@ -1,0 +1,14 @@
+1. How long did you spend working on this project?
+I’m not sure, but certainly much longer than I should have. Multiple weeks, but with varying hours/wk. My typical work week is a little over 50 hours, and the past month has been 60-70, so Udacity work has slowed a bit (but progress is still being made, so I’m happy!).
+
+2. What was the most rewarding challenge you conquered?
+I’m not sure, but there were a lot of satisfying moments in this project. This was the most rewarding project to-date.
+
+3. What two additional features did you build? Why?
+a) Returns. I added the ability to return items, increase the stock of that item, and also keep a record of the returned transaction. Transactions are moved from the old transactions list to a new returned transactions list. I added this feature because it seemed to be the most glaring omission from the initial setup.
+b) Find transactions by customer instead of transaction id. This feature returns an array of all the given customer’s transactions. Honestly, I added this feature because it was something I already knew how to do, and I felt I was spending too much time on this project without progressing in the overall nano-degree.
+
+4. Where do you still have room to grow?
+The obvious answer is everywhere, but the “creative” parts of the recent projects have created the most problems for me, just judging by the timing it takes me to get the initial part of the project done, and then the long gap between that and finishing the “additional features” and submitting the project. I think this is because there’s the potential to need to learn a LOT of additional things depending on what additional features you go with.
+
+I think I should also add more comments throughout my code.

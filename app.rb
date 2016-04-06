@@ -68,12 +68,13 @@ puts transaction2.product == nanoblock # Should return true
 ##########################################
 #USE BELOW CODE TO TEST NEW FEATURE 1: Returning Items
 #puts Transaction.all.count
-#Transaction.returned(2) 
+#Transaction.returned(2)
 #puts Transaction.all.count
 
 ##########################################
-#USE BELOW CODE TO TEST NEW FEATURE 2:
-
-
-
-
+#USE BELOW CODE TO TEST NEW FEATURE 2: Find all transactions by a certain customer
+#walters_purchases = Transaction.find_by_customer("Walter Latimer")
+#puts walters_purchases[0].product.title
+#puts walters_purchases[0].customer.name
+#puts walters_purchases[1].product.title
+#puts walters_purchases[1].customer.name
